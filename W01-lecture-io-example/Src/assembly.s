@@ -43,7 +43,7 @@ program_loop:
 
 @ 	task: read in the input button !
 	LDR R0, =GPIOA	@ port for the input button
-	LDR R1, [R0, IDR]
+	LDR R1, [R0, IDR] @IDR 0X10
 
 @ 	Look at the GPIOA offset IDR, display as hex, then as binary. Look at the manual page 239
 
