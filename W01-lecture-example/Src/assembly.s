@@ -28,9 +28,9 @@ main:
 
 forever_loop:
 
-	LDRB R3, [R2, R4]
+	LDRB R3, [R2, R4] @ loads a single byte from byte_array (offset R4) into R3
 	ADD R3, #0x01
-	STRB R3, [R2, R4]
+	STRB R3, [R2, R4] @ stores the incremented byte back into byte_array at the same position.
 
 	ADD R4, 0x01
 
