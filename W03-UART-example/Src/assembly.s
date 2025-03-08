@@ -19,9 +19,9 @@ incoming_buffer: .space 62
 incoming_counter: .byte 62
 
 @ Define a string
-tx_string: .asciz "abcdefgh\r\n"
+tx_string: .asciz "Walnut is a beautiful cat\r\n"
 @ one way to know the length of the string is to just define it as a variable
-tx_length: .byte 10
+tx_length: .byte 27
 
 
 .text
